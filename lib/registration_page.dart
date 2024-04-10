@@ -80,28 +80,36 @@ class _RegistrationPageState extends State<RegistrationPage> {
                                     },
                                   ),
                                 ),
-                                ContainerTextField(
-                                  labelText: 'Name:',
+                                Expanded(
+                                  child: ContainerTextField(
+                                    labelText: 'Name:',
+                                  ),
                                 ),
-                                ContainerTextField(
-                                  labelText: 'E-mail:',
+                                Expanded(
+                                  child: ContainerTextField(
+                                    labelText: 'E-mail:',
+                                  ),
                                 ),
-                                ContainerTextField(
-                                  labelText: 'Phone No.:',
+                                Expanded(
+                                  child: ContainerTextField(
+                                    labelText: 'Phone No.:',
+                                  ),
                                 ),
-                                Container(
-                                  margin: EdgeInsets.all(15),
-                                  child: DOBInputField(
-                                    firstDate: DateTime(1900),
-                                    lastDate: DateTime.now(),
-                                    showLabel: true,
-                                    dateFormatType: DateFormatType.DDMMYYYY,
-                                    fieldLabelText: 'Date of Birth:',
-                                    autovalidateMode: AutovalidateMode.always,
-                                    inputDecoration: InputDecoration(
-                                      border: OutlineInputBorder(
-                                          borderSide: BorderSide(width: 1.0, color: Colors.black),
-                                        borderRadius: BorderRadius.circular(15)
+                                Expanded(
+                                  child: Container(
+                                    margin: EdgeInsets.all(15),
+                                    child: DOBInputField(
+                                      firstDate: DateTime(1900),
+                                      lastDate: DateTime.now(),
+                                      showLabel: true,
+                                      dateFormatType: DateFormatType.DDMMYYYY,
+                                      fieldLabelText: 'Date of Birth:',
+                                      autovalidateMode: AutovalidateMode.always,
+                                      inputDecoration: InputDecoration(
+                                        border: OutlineInputBorder(
+                                            borderSide: BorderSide(width: 1.0, color: Colors.black),
+                                          borderRadius: BorderRadius.circular(15)
+                                        ),
                                       ),
                                     ),
                                   ),
