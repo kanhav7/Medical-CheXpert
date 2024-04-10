@@ -1,0 +1,448 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Downloads",
+            "cwd": "Users/kanhavsonkiya/Downloads",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Downloads (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Downloads",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Downloads (release mode)",
+            "cwd": "Users/kanhavsonkiya/Downloads",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "BMI-Calculator-Flutter-Completed",
+            "cwd": "Users/kanhavsonkiya/Desktop/BMI-Calculator-Flutter-Completed",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "BMI-Calculator-Flutter-Completed (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/BMI-Calculator-Flutter-Completed",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "BMI-Calculator-Flutter-Completed (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/BMI-Calculator-Flutter-Completed",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Business card",
+            "cwd": "Users/kanhavsonkiya/Desktop/Business card",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Business card (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/Business card",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Business card (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/Business card",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Clima-Flutter",
+            "cwd": "Users/kanhavsonkiya/Desktop/Clima-Flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Clima-Flutter (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/Clima-Flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Clima-Flutter (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/Clima-Flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Clima-Flutter-Completed",
+            "cwd": "Users/kanhavsonkiya/Desktop/Clima-Flutter-Completed",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Clima-Flutter-Completed (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/Clima-Flutter-Completed",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Clima-Flutter-Completed (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/Clima-Flutter-Completed",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "PandaMate",
+            "cwd": "Users/kanhavsonkiya/Desktop/PandaMate",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "PandaMate (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/PandaMate",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "PandaMate (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/PandaMate",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Todoey",
+            "cwd": "Users/kanhavsonkiya/Desktop/Todoey",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Todoey (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/Todoey",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Todoey (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/Todoey",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "bitcoin-ticker-flutter",
+            "cwd": "Users/kanhavsonkiya/Desktop/bitcoin-ticker-flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "bitcoin-ticker-flutter (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/bitcoin-ticker-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "bitcoin-ticker-flutter (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/bitcoin-ticker-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "bmi-calculator-flutter",
+            "cwd": "Users/kanhavsonkiya/Desktop/bmi-calculator-flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "bmi-calculator-flutter (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/bmi-calculator-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "bmi-calculator-flutter (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/bmi-calculator-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "destini-challenge-starting",
+            "cwd": "Users/kanhavsonkiya/Desktop/destini-challenge-starting",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "destini-challenge-starting (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/destini-challenge-starting",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "destini-challenge-starting (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/destini-challenge-starting",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "dicee-flutter",
+            "cwd": "Users/kanhavsonkiya/Desktop/dicee-flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "dicee-flutter (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/dicee-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "dicee-flutter (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/dicee-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flash-chat-flutter",
+            "cwd": "Users/kanhavsonkiya/Desktop/flash-chat-flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flash-chat-flutter (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/flash-chat-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flash-chat-flutter (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/flash-chat-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "magic-8-ball-flutter",
+            "cwd": "Users/kanhavsonkiya/Desktop/magic-8-ball-flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "magic-8-ball-flutter (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/magic-8-ball-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "magic-8-ball-flutter (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/magic-8-ball-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "medical",
+            "cwd": "Users/kanhavsonkiya/Desktop/medical",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "medical (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/medical",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "medical (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/medical",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "quizzler-flutter",
+            "cwd": "Users/kanhavsonkiya/Desktop/quizzler-flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "quizzler-flutter (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/quizzler-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "quizzler-flutter (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/quizzler-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "quizzler-flutter-challenge-final",
+            "cwd": "Users/kanhavsonkiya/Desktop/quizzler-flutter-challenge-final",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "quizzler-flutter-challenge-final (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/quizzler-flutter-challenge-final",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "quizzler-flutter-challenge-final (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/quizzler-flutter-challenge-final",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "sample",
+            "cwd": "Users/kanhavsonkiya/Desktop/sample",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sample (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/sample",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sample (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/sample",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "xylophone-flutter",
+            "cwd": "Users/kanhavsonkiya/Desktop/xylophone-flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "xylophone-flutter (profile mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/xylophone-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "xylophone-flutter (release mode)",
+            "cwd": "Users/kanhavsonkiya/Desktop/xylophone-flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "demo_app",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/demo_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "demo_app (profile mode)",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/demo_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "demo_app (release mode)",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/demo_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "dice_app",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/dice_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "dice_app (profile mode)",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/dice_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "dice_app (release mode)",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/dice_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "fun",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/fun",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "fun (profile mode)",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/fun",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "fun (release mode)",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/fun",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "test_2",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/test_2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "test_2 (profile mode)",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/test_2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "test_2 (release mode)",
+            "cwd": "Users/kanhavsonkiya/StudioProjects/test_2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
