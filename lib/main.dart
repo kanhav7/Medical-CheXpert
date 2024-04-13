@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'registration_page.dart';
-
+import 'scroll_registration_page.dart';
 
 
 void main() {
