@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'registration_page.dart';
-import 'patient_registration_page.dart';
-import 'login_page.dart';
-import 'temp_navigate.dart';
+import 'scroll_registration_page.dart';
+
 
 void main() {
   runApp(MedicalChexpert());
@@ -14,7 +13,7 @@ class MedicalChexpert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TempNavigate(),
+      home: RegistrationPage(),
     );
   }
 }
