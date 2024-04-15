@@ -30,23 +30,30 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
           backgroundColor: Color(0xFFE9EAf6),
           appBar: AppBar(
             title: Text('DOCTOR REGISTRATION'),
-            backgroundColor: Color(0xFF0249B7),
+            backgroundColor: kLogoDarkBlue,
           ),
           body: SingleChildScrollView(
             physics: ClampingScrollPhysics(),
             child: ConstrainedBox(
               constraints: BoxConstraints.expand(
-                  height: 900
+                  height: 1400
               ),
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.stretch,
                 // mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Expanded(
-                    flex: 5,
+                    flex: 2,
+                    child: Image(
+                        image: AssetImage('images/MC_Logo.png'),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 6,
                     child: Form(
                         child: Column(
                           children: [
+
                             Expanded(
                                 child: Container(
                                   padding: EdgeInsets.only(top: 30),
@@ -103,6 +110,68 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
                                           ),
                                         ),
                                       ),
+                                      Expanded(
+                                        child: ContainerTextField(
+                                          labelText: 'Qualification:',
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: Container(
+                                          margin: EdgeInsets.symmetric(horizontal: 15),
+                                          child: DropdownButtonFormField(
+                                              items: kSpecialList.map((specialty) => DropdownMenuItem<String>(
+                                                value: specialty,
+                                                child: Text(specialty),
+                                              )).toList(),
+                                              onChanged: (value) {
+                                                print(value);
+                                              },
+                                            menuMaxHeight: 300,
+                                            hint: Text("Specialisation: "),
+                                            decoration: InputDecoration(
+                                              border: OutlineInputBorder(
+                                                borderSide: BorderSide(width: 1.0, color: Colors.black),
+                                            borderRadius: BorderRadius.circular(15),
+                                          ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: Container(
+                                          margin: EdgeInsets.fromLTRB(15, 0, 15, 20),
+                                          child: ElevatedButton(
+                                              onPressed: () {},
+                                              style: ButtonStyle(
+                                                shape: MaterialStatePropertyAll(
+                                                  RoundedRectangleBorder(
+                                                    borderRadius: BorderRadius.circular(15),
+                                                  )
+                                                ),
+                                                backgroundColor: MaterialStatePropertyAll(kLogoDarkBlue),
+                                                textStyle: MaterialStatePropertyAll(
+                                                  TextStyle(
+                                                    color: Colors.white
+                                                  ),
+                                                )
+                                              ),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                  Icon(
+                                                    FontAwesomeIcons.file
+                                                  ),
+                                                  Text(
+                                                    'Upload ID',
+                                                    style: TextStyle(
+                                                      color: Colors.white
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                          ),
+                                        ),
+                                      )
                                     ],
                                   ),
                                 )

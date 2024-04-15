@@ -36,17 +36,25 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
             physics: ClampingScrollPhysics(),
             child: ConstrainedBox(
               constraints: BoxConstraints.expand(
-                height: 900
+                height: 1100
               ),
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.stretch,
                 // mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Expanded(
+                    flex: 2,
+                    child: Image(
+                        image: AssetImage('images/MC_Logo.png'),
+
+                    ),
+                  ),
+                  Expanded(
                     flex: 5,
                     child: Form(
                         child: Column(
                           children: [
+
                             Expanded(
                                 child: Container(
                                   padding: EdgeInsets.only(top: 30),
