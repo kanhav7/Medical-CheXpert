@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-const kActiveContainerColour = Color(0xFF125488);
+const kActiveContainerColour = Color(0xFF0249B7);
 const kActiveIconColour = Colors.white;
 const kActiveTextColour = Colors.white;
 const kInactiveContainerColour = Colors.white;

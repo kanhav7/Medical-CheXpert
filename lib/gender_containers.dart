@@ -54,7 +54,7 @@ class _GenderContainerState extends State<GenderContainer> {
             borderRadius: BorderRadius.circular(15),
           boxShadow: [kBoxShadow]
         ),
-        margin: EdgeInsets.fromLTRB(7.5, 0, 7.5, 0),
+        margin: EdgeInsets.fromLTRB(7.5, 15, 7.5, 15),
       ),
     );
   }

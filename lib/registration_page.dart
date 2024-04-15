@@ -29,19 +29,20 @@ class _RegistrationPageState extends State<RegistrationPage> {
       child: Scaffold(
         appBar: AppBar(
           title: Text('PATIENT REGISTRATION'),
-          backgroundColor: Color(0xFF125488),
+          backgroundColor: Color(0xFF0249B7),
         ),
         body: Column(
           // crossAxisAlignment: CrossAxisAlignment.stretch,
           // mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Expanded(
-              flex: 4,
+              flex: 5,
               child: Form(
                   child: Column(
                     children: [
                       Expanded(
                           child: Container(
+                            padding: EdgeInsets.only(top: 15),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10.0),
                               color: Colors.white,
@@ -51,33 +52,35 @@ class _RegistrationPageState extends State<RegistrationPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Container(
-                                  margin: EdgeInsets.all(15),
-                                  child: DropdownButtonFormField(
-                                    decoration: InputDecoration(
-                                        border: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(15),
-                                            borderSide: BorderSide(
-                                                color: Colors.black,
-                                                width: 1.0
-                                            )
-                                        )
+                                Expanded(
+                                  child: Container(
+                                    margin: EdgeInsets.fromLTRB(15, 7.5, 15, 7.5),
+                                    child: DropdownButtonFormField(
+                                      decoration: InputDecoration(
+                                          border: OutlineInputBorder(
+                                              borderRadius: BorderRadius.circular(15),
+                                              borderSide: BorderSide(
+                                                  color: Colors.black,
+                                                  width: 1.0
+                                              )
+                                          )
+                                      ),
+                                      borderRadius: BorderRadius.circular(15),
+                                      value: dropdownValue,
+                                      items: kDropDownItems.map<DropdownMenuItem<String>>((String value) {
+                                        return DropdownMenuItem<String>(
+                                          value: value,
+                                          child: Text(value),
+                                        );
+                                      }).toList(),
+                                      onChanged: (String? value) {
+                                        // This is called when the user selects an item.
+                                        setState(() {
+                                          dropdownValue = value!;
+                                          print(dropdownValue);
+                                        });
+                                      },
                                     ),
-                                    borderRadius: BorderRadius.circular(15),
-                                    value: dropdownValue,
-                                    items: kDropDownItems.map<DropdownMenuItem<String>>((String value) {
-                                      return DropdownMenuItem<String>(
-                                        value: value,
-                                        child: Text(value),
-                                      );
-                                    }).toList(),
-                                    onChanged: (String? value) {
-                                      // This is called when the user selects an item.
-                                      setState(() {
-                                        dropdownValue = value!;
-                                        print(dropdownValue);
-                                      });
-                                    },
                                   ),
                                 ),
                                 Expanded(
@@ -97,7 +100,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                                 ),
                                 Expanded(
                                   child: Container(
-                                    margin: EdgeInsets.all(15),
+                                    margin: EdgeInsets.fromLTRB(15, 7.5, 15, 7.5),
                                     child: DOBInputField(
                                       firstDate: DateTime(1900),
                                       lastDate: DateTime.now(),
@@ -125,7 +128,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
             Expanded(
               flex: 1,
               child: Container(
-                margin: EdgeInsets.all(15),
+                margin: EdgeInsets.fromLTRB(15, 0, 15, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -173,11 +176,11 @@ class _RegistrationPageState extends State<RegistrationPage> {
               ),
             ),
             Expanded(
-              flex: 1,
+              //flex: 1,
                 child: Container(
                   decoration: BoxDecoration(
                     boxShadow: [kBoxShadow],
-                    color: Color(0xFF125488),
+                    color: Color(0xFF0249B7),
                   ),
                   width: double.infinity,
                   margin: EdgeInsets.only(top: 15),
