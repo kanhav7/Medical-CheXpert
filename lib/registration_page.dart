@@ -1,207 +1,60 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'text_field.dart';
-import 'package:dob_input_field/dob_input_field.dart';
-import 'gender_containers.dart';
-import 'constants.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-enum Gender{
-  male,
-  female,
-  other
-}
-
-var selectedGender;
-class RegistrationPage extends StatefulWidget {
-  const RegistrationPage({super.key});
+class welcomePage extends StatefulWidget {
   @override
-  State<RegistrationPage> createState() => _RegistrationPageState();
+  State<StatefulWidget> createState() => _MyAppState();
 }
 
-class _RegistrationPageState extends State<RegistrationPage> {
+class _MyAppState extends State<welcomePage> {
+  final _imagePaths = [
+    'images/1.jpeg',
+    'images/2.png',
+    'images/3.png',
+  ];
 
-  String dropdownValue = kDropDownItems.first;
+  get callbackFunction => null;
+  int activeIndex = 0;
+
   @override
   Widget build(BuildContext context) {
-
-    print(selectedGender);
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('PATIENT REGISTRATION'),
-          backgroundColor: Color(0xFF125488),
-        ),
-        body: Column(
-          // crossAxisAlignment: CrossAxisAlignment.stretch,
-          // mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Expanded(
-              flex: 4,
-              child: Form(
-                  child: Column(
-                    children: [
-                      Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.0),
-                              color: Colors.white,
-                              boxShadow: [kBoxShadow]
-                            ),
-                            margin: EdgeInsets.fromLTRB(22.5, 22.5, 22.5, 15),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                Container(
-                                  margin: EdgeInsets.all(15),
-                                  child: DropdownButtonFormField(
-                                    decoration: InputDecoration(
-                                        border: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(15),
-                                            borderSide: BorderSide(
-                                                color: Colors.black,
-                                                width: 1.0
-                                            )
-                                        )
-                                    ),
-                                    borderRadius: BorderRadius.circular(15),
-                                    value: dropdownValue,
-                                    items: kDropDownItems.map<DropdownMenuItem<String>>((String value) {
-                                      return DropdownMenuItem<String>(
-                                        value: value,
-                                        child: Text(value),
-                                      );
-                                    }).toList(),
-                                    onChanged: (String? value) {
-                                      // This is called when the user selects an item.
-                                      setState(() {
-                                        dropdownValue = value!;
-                                        print(dropdownValue);
-                                      });
-                                    },
-                                  ),
-                                ),
-                                Expanded(
-                                  child: ContainerTextField(
-                                    labelText: 'Name:',
-                                  ),
-                                ),
-                                Expanded(
-                                  child: ContainerTextField(
-                                    labelText: 'E-mail:',
-                                  ),
-                                ),
-                                Expanded(
-                                  child: ContainerTextField(
-                                    labelText: 'Phone No.:',
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    margin: EdgeInsets.all(15),
-                                    child: DOBInputField(
-                                      firstDate: DateTime(1900),
-                                      lastDate: DateTime.now(),
-                                      showLabel: true,
-                                      dateFormatType: DateFormatType.DDMMYYYY,
-                                      fieldLabelText: 'Date of Birth:',
-                                      autovalidateMode: AutovalidateMode.always,
-                                      inputDecoration: InputDecoration(
-                                        border: OutlineInputBorder(
-                                            borderSide: BorderSide(width: 1.0, color: Colors.black),
-                                          borderRadius: BorderRadius.circular(15)
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          )
-                      )
-                    ],
-                  )
-              ),
+    return MaterialApp(
+        home: Scaffold(
+      body: SafeArea(
+        child: Stack(alignment: Alignment.bottomCenter, children: [
+          Center(
+            child: CarouselSlider(
+              items: _imagePaths.map((imagePath) {
+                return Builder(builder: (context) {
+                  return Container(
+                    width: 7000,
+                    height: 6000,
+                    margin: EdgeInsets.symmetric(horizontal: 90),
+                    child: Image.asset(
+                      imagePath,
+                      height: 5000,
+                      width: 6000,
+                    ),
+                  );
+                });
+              }).toList(),
+              options: CarouselOptions(onPageChanged: (index, reason) {
+                setState(() {
+                  activeIndex = index;
+                });
+              }),
             ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                margin: EdgeInsets.all(15),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                        child: GenderContainer(
-                          genderIcon: FontAwesomeIcons.mars,
-                          buttonText: 'MALE',
-                          onTap: () {
-                            setState(() {
-                              selectedGender = Gender.male;
-                            });
-                          },
-                          genderColour: selectedGender == Gender.male ? kActiveContainerColour : kInactiveContainerColour,
-                          genderContentColour: selectedGender == Gender.male ? kActiveIconColour : kInactiveIconColour,
-                        )
-                    ),
-                    Expanded(
-                        child: GenderContainer(
-                          genderIcon: FontAwesomeIcons.venus,
-                          buttonText: 'FEMALE',
-                          onTap: () {
-                            setState(() {
-                              selectedGender = Gender.female;
-                            });
-                          },
-                          genderColour: selectedGender == Gender.female ? kActiveContainerColour : kInactiveContainerColour,
-                          genderContentColour: selectedGender == Gender.female ? kActiveIconColour : kInactiveIconColour,
-                        )
-                    ),
-                    Expanded(
-                        child: GenderContainer(
-                          genderIcon: FontAwesomeIcons.transgender,
-                          buttonText: 'OTHER',
-                          onTap: () {
-                            setState(() {
-                              selectedGender = Gender.other;
-                            });
-                          },
-                          genderColour: selectedGender == Gender.other ? kActiveContainerColour : kInactiveContainerColour,
-                          genderContentColour: selectedGender == Gender.other ? kActiveIconColour : kInactiveIconColour,
-                        )
-                    ),
-                  ],
-                ),
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: AnimatedSmoothIndicator(
+              activeIndex: activeIndex,
+              count: _imagePaths.length,
             ),
-            Expanded(
-              flex: 1,
-                child: Container(
-                  decoration: BoxDecoration(
-                    boxShadow: [kBoxShadow],
-                    color: Color(0xFF125488),
-                  ),
-                  width: double.infinity,
-                  margin: EdgeInsets.only(top: 15),
-                  child: TextButton(
-                    child: Text(
-                        'SUBMIT',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30
-                    ),
-                    ),
-                    onPressed: () {
-                    },
-                  ),
-                )
-            )
-
-
-          ],
-        )
+          ),
+        ]),
       ),
-    );
+    ));
   }
 }
-
-
-
