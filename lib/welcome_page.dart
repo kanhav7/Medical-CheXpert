@@ -62,13 +62,13 @@ class _MyAppState extends State<WelcomePage> {
             heightFactor: 50,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
 
               ),
               margin: EdgeInsets.only(bottom: 50),
               child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => TempNavigate()));
+                  },
                   child: Text(
                       'SKIP',
                     style: TextStyle(
@@ -76,8 +76,15 @@ class _MyAppState extends State<WelcomePage> {
                     ),
                   ),
                 style: ButtonStyle(
-                  elevation: MaterialStatePropertyAll(5),
+                  elevation: MaterialStatePropertyAll(2),
                   backgroundColor: MaterialStatePropertyAll(Colors.white),
+                  shape: MaterialStatePropertyAll(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(15)
+                      )
+                    )
+                  )
 
                 ),
               ),
@@ -90,7 +97,7 @@ class _MyAppState extends State<WelcomePage> {
               child: AnimatedSmoothIndicator(
                 activeIndex: activeIndex,
                 count: _imagePaths.length,
-                effect: JumpingDotEffect(
+                effect: WormEffect(
                   activeDotColor: Color(0xFF90CDF9),
                   dotColor: Colors.grey.shade300
                 ),

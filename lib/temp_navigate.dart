@@ -9,40 +9,49 @@ class TempNavigate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Row(
-          children: [
-            TextButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginDemo()));
-                },
-                child: Text(
-                  'Login'
-                )
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            TextButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => PatientRegistrationPage()));
-                },
-                child: Text(
-                    'PatRegister'
-                )
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            TextButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => DoctorRegistrationPage()));
-                },
-                child: Text(
-                    'DocRegister'
-                )
-            ),
-          ],
+
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/background.png'),
+            fit: BoxFit.cover
+          )
+        ),
+        child: Center(
+          child: Row(
+            children: [
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginDemo()));
+                  },
+                  child: Text(
+                    'Login'
+                  )
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => PatientRegistrationPage()));
+                  },
+                  child: Text(
+                      'PatRegister'
+                  )
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => DoctorRegistrationPage()));
+                  },
+                  child: Text(
+                      'DocRegister'
+                  )
+              ),
+            ],
+          ),
         ),
       ),
     );
