@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_chexpert/welcome_page.dart';
 import 'scroll_registration_page.dart';
-import 'temp_navigate.dart';
+import 'navigation_page.dart';
 
 
 void main() {

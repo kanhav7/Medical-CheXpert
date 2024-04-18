@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'login_page.dart';
 import 'text_field.dart';
 import 'package:dob_input_field/dob_input_field.dart';
 import 'gender_containers.dart';
@@ -36,7 +37,7 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
             physics: ClampingScrollPhysics(),
             child: ConstrainedBox(
               constraints: BoxConstraints.expand(
-                height: 1100
+                height: 1130
               ),
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -57,7 +58,7 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
 
                             Expanded(
                                 child: Container(
-                                  padding: EdgeInsets.only(top: 30),
+                                  padding: EdgeInsets.symmetric(vertical: 5),
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10.0),
                                       color: Colors.white,
@@ -67,6 +68,17 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
+                                      TextButton(
+                                          onPressed: () {
+                                            Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                                          },
+                                          child: Text(
+                                            'Already have an account? Login.',
+                                            style: TextStyle(
+                                                color: Color(0xFF0448B4)
+                                            ),
+                                          )
+                                      ),
                                       Expanded(
                                         child: ContainerTextField(
                                           labelText: 'Name:',
