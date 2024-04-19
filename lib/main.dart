@@ -3,6 +3,7 @@ import 'package:medical_chexpert/doctor_registration_page.dart';
 import 'package:medical_chexpert/landing_page.dart';
 import 'package:medical_chexpert/login_page.dart';
 import 'package:medical_chexpert/patient_registration_page.dart';
+import 'package:medical_chexpert/tester.dart';
 import 'package:medical_chexpert/welcome_page.dart';
 import 'scroll_registration_page.dart';
 import 'navigation_page.dart';
@@ -18,14 +19,15 @@ class MedicalChexpert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: 'landing',
+      initialRoute: 'welcome',
       routes: {
         'welcome': (context) => WelcomePage(),
         'navigator': (context) => NavigationPage(),
         'login': (context) => LoginPage(),
         'docRegister': (context) => DoctorRegistrationPage(),
         'patRegister': (context) => PatientRegistrationPage(),
-        'landing': (context) => LandingPage()
+        'landing': (context) => LandingPage(),
+        'tester': (context) => Tester()
       },
     );
   }

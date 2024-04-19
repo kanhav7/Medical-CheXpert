@@ -8,6 +8,7 @@ const kInactiveContainerColour = Colors.white;
 const kInactiveIconColour = Colors.grey;
 const kInactiveTextColour = Colors.grey;
 
+const kBackgroundColour = Color(0xFFE9EAF6);
 const kLogoDarkBlue = Color(0xFF0249B7);
 
 const List<String> kDropDownItems = <String>[
