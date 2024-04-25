@@ -5,6 +5,8 @@ class ContainerTextField extends StatelessWidget {
 
   String labelText;
 
+  void validatorFunc;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,6 +19,7 @@ class ContainerTextField extends StatelessWidget {
           ),
             labelText: labelText,
         ),
+        validator: (value) {validatorFunc;},
       ),
     );
   }

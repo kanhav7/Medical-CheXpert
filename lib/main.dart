@@ -27,7 +27,7 @@ class MedicalChexpert extends StatelessWidget {
         'docRegister': (context) => DoctorRegistrationPage(),
         'patRegister': (context) => PatientRegistrationPage(),
         'landing': (context) => LandingPage(),
-        'tester': (context) => Tester()
+        //'tester': (context) => Tester()
       },
     );
   }

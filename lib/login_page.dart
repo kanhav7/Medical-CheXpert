@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'text_field.dart';
+import 'ExtractedWidgets/register_text_field.dart';
 import 'package:dob_input_field/dob_input_field.dart';
-import 'gender_containers.dart';
+import 'ExtractedWidgets/gender_containers.dart';
 import 'constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
