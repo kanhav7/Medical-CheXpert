@@ -40,8 +40,8 @@ class NavigationPage extends StatelessWidget {
               height: 100,
             ),
             Container(
-              width: 140,
-              height: 40,
+              width: 200,
+              height: 75,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => PatientRegistrationPage()));
@@ -68,11 +68,11 @@ class NavigationPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 50,
             ),
             Container(
-              width: 140,
-              height: 40,
+              width: 200,
+              height: 75,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => DoctorRegistrationPage()));

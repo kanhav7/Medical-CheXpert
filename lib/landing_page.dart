@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:medical_chexpert/apointments.dart';
 import 'package:medical_chexpert/constants.dart';
+import 'package:medical_chexpert/profile_page.dart';
 import 'ExtractedWidgets/column_button.dart';
 
 class LandingPage extends StatefulWidget {
@@ -12,30 +14,13 @@ class LandingPage extends StatefulWidget {
 }
 
 class _LandingPageState extends State<LandingPage> {
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        elevation: 15,
-        iconSize: 20,
-        selectedItemColor: kLogoDarkBlue,
-        unselectedItemColor: Colors.grey.shade500,
-
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.house),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(FontAwesomeIcons.calendar),
-            label: ''
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(FontAwesomeIcons.user),
-              label: ''
-          ),
-        ],
-      ),
+      //bottomNavigationBar:
       body: Container(
         child: SafeArea(
           child: SingleChildScrollView(
@@ -47,7 +32,7 @@ class _LandingPageState extends State<LandingPage> {
                   margin: EdgeInsets.fromLTRB(15, 0,15,15),
                   padding: EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15)
+                      borderRadius: BorderRadius.circular(15)
                   ),
                   height: 100,
                   width: double.infinity,
@@ -67,12 +52,12 @@ class _LandingPageState extends State<LandingPage> {
                             ),
                           ),
                           Text(
-                            'James',
+                            'Shivansh',
                             textAlign: TextAlign.left,
                             style: GoogleFonts.poppins(
-                              color: Colors.black,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 20
+                                color: Colors.black,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 20
                             ),
                           )
                         ],
@@ -89,8 +74,8 @@ class _LandingPageState extends State<LandingPage> {
                   width: double.infinity,
                   height: 140,
                   decoration: BoxDecoration(
-                    color: kLogoDarkBlue,
-                    borderRadius: BorderRadius.circular(15)
+                      color: kLogoDarkBlue,
+                      borderRadius: BorderRadius.circular(15)
                   ),
                   child: Column(
                     children: [
@@ -102,8 +87,7 @@ class _LandingPageState extends State<LandingPage> {
                             children: [
                               CircleAvatar(
                                 radius: 25,
-                                //backgroundImage: AssetImage('images/mc_notext_logo.png'),
-
+                                backgroundImage: AssetImage('images/manphoto.png'),
                                 backgroundColor: Colors.white,
                               ),
                               SizedBox(
@@ -113,11 +97,11 @@ class _LandingPageState extends State<LandingPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'James D\'Souza',
+                                    'Shivansh Gupta',
                                     style: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 15,
-                                      color: Colors.white
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                        color: Colors.white
                                     ),
                                   ),
                                   SizedBox(
@@ -126,8 +110,8 @@ class _LandingPageState extends State<LandingPage> {
                                   Text(
                                     '25 years old',
                                     style: GoogleFonts.poppins(
-                                      fontSize: 12,
-                                      color: Colors.white
+                                        fontSize: 12,
+                                        color: Colors.white
                                     ),
                                   )
                                 ],
@@ -135,14 +119,14 @@ class _LandingPageState extends State<LandingPage> {
                             ],
                           ),
                           IconButton(
-                              onPressed: () {
+                            onPressed: () {
 
-                              },
-                              icon: Icon(
-                                  Icons.navigate_next,
-                                size: 40,
-                                color: Colors.white,
-                              ),
+                            },
+                            icon: Icon(
+                              Icons.navigate_next,
+                              size: 40,
+                              color: Colors.white,
+                            ),
                           )
                         ],
                       ),
@@ -167,10 +151,10 @@ class _LandingPageState extends State<LandingPage> {
                             width: 10,
                           ),
                           Text(
-                            'Sunday, 25th',
+                            'Sunday, April 28th, 2024',
                             style: GoogleFonts.poppins(
-                              color: Colors.white,
-                              fontSize: 12
+                                color: Colors.white,
+                                fontSize: 12
                             ),
                           )
                         ],
@@ -183,59 +167,59 @@ class _LandingPageState extends State<LandingPage> {
                   margin: EdgeInsets.all(15),
                   padding: EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                    color: kBackgroundColour,
+                      color: kBackgroundColour,
                       borderRadius: BorderRadius.circular(15)
                   ),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Search for health issue',
-                      hintStyle: GoogleFonts.poppins(
-                        color: Colors.grey.shade500,
-                        fontSize: 15
-                      ),
-                      icon: Icon(FontAwesomeIcons.magnifyingGlass, color: kLogoDarkBlue,),
-                      border: InputBorder.none
+                        hintText: 'Search for health issue',
+                        hintStyle: GoogleFonts.poppins(
+                            color: Colors.grey.shade500,
+                            fontSize: 15
+                        ),
+                        icon: Icon(FontAwesomeIcons.magnifyingGlass, color: kLogoDarkBlue,),
+                        border: InputBorder.none
                     ),
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.all(15),
-                  height: 102,
-                  //color: Colors.red,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      ColumnButton(
-                        buttonIcon: FontAwesomeIcons.virusCovid,
-                        bottomText: 'Diseases',
-                      ),
-                      ColumnButton(
-                        buttonIcon: FontAwesomeIcons.stethoscope,
-                        bottomText: 'Doctor',
-                      ),
-                      ColumnButton(
-                        buttonIcon: FontAwesomeIcons.pills,
-                        bottomText: 'Medicine',
-                      ),
-                      ColumnButton(
-                        buttonIcon: FontAwesomeIcons.solidBuilding,
-                        bottomText: 'Hospital',
-                      ),
-                    ],
-                  )
+                    margin: EdgeInsets.all(15),
+                    height: 102,
+                    //color: Colors.red,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        ColumnButton(
+                          buttonIcon: FontAwesomeIcons.male,
+                          bottomText: 'Symptoms',
+                        ),
+                        ColumnButton(
+                          buttonIcon: FontAwesomeIcons.stethoscope,
+                          bottomText: 'Doctors',
+                        ),
+                        ColumnButton(
+                          buttonIcon: FontAwesomeIcons.pills,
+                          bottomText: 'Pharmacy',
+                        ),
+                        ColumnButton(
+                          buttonIcon: FontAwesomeIcons.fileContract,
+                          bottomText: 'Reports',
+                        ),
+                      ],
+                    )
                 ),
                 Container(
-                  alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.all(15),
-                  child: Text(
-                    'Near Doctor',
-                    textAlign: TextAlign.left,
-                    style: GoogleFonts.poppins(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20
-                    ),
-                  )
+                    alignment: Alignment.centerLeft,
+                    margin: EdgeInsets.all(15),
+                    child: Text(
+                      'Near Doctor',
+                      textAlign: TextAlign.left,
+                      style: GoogleFonts.poppins(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18
+                      ),
+                    )
                 ),
                 Container(
                   padding: EdgeInsets.all(15),
@@ -256,8 +240,7 @@ class _LandingPageState extends State<LandingPage> {
                             children: [
                               CircleAvatar(
                                 radius: 25,
-                                //backgroundImage: AssetImage('images/mc_notext_logo.png'),
-
+                                backgroundImage: AssetImage('images/drphoto.png'),
                                 backgroundColor: kBackgroundColour,
                               ),
                               SizedBox(
@@ -267,7 +250,7 @@ class _LandingPageState extends State<LandingPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Dr. Joseph McCarthy',
+                                    'Dr. Taksh Kothari',
                                     style: GoogleFonts.poppins(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 15,
@@ -361,6 +344,5 @@ class _LandingPageState extends State<LandingPage> {
     );
   }
 }
-
 
 

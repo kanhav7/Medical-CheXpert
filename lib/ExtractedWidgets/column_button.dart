@@ -17,7 +17,7 @@ class ColumnButton extends StatelessWidget {
       children: [
         FilledButton(
             onPressed: () {
-
+              Navigator.pushNamed(context, 'reportYear');
             },
             style: FilledButton.styleFrom(
                 shape: CircleBorder(),

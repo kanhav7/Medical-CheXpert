@@ -19,9 +19,9 @@ const List<String> kDropDownItems = <String>[
 ];
 
 const kBoxShadow = BoxShadow(
-color: Colors.black12,
-offset: Offset(2.0, 4.0),
-blurRadius: 4.0
+    color: Colors.black12,
+    offset: Offset(2.0, 4.0),
+    blurRadius: 4.0
 );
 
 const List<String> kSpecialList = [

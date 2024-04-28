@@ -199,7 +199,7 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.pushNamed(context, 'landing');
+                            Navigator.pushNamed(context, 'bottomNav');
                           },
                         ),
                       )

@@ -261,7 +261,7 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.pushNamed(context, 'landing');
+                            Navigator.pushNamed(context, 'bottomNav');
                           },
                         ),
                       )

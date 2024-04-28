@@ -88,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       onPressed: () {
-                        Navigator.pushNamed(context, 'landing');
+                        Navigator.pushNamed(context, 'bottomNav');
                       },
                     ),
                   )
