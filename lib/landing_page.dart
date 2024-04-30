@@ -9,6 +9,7 @@ import 'ExtractedWidgets/column_button.dart';
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
 
+
   @override
   State<LandingPage> createState() => _LandingPageState();
 }
