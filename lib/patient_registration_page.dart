@@ -5,6 +5,7 @@ import 'package:dob_input_field/dob_input_field.dart';
 import 'ExtractedWidgets/gender_containers.dart';
 import 'constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 enum Gender{
   male,
@@ -30,8 +31,14 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
       child: Scaffold(
         backgroundColor: Color(0xFFE9EAf6),
           appBar: AppBar(
-            title: Text('PATIENT REGISTRATION'),
-            backgroundColor: Color(0xFF0249B7),
+            title: Text(
+              'Patient Registration',
+              style: GoogleFonts.poppins(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            backgroundColor: kLogoDarkBlue,
           ),
           body: SingleChildScrollView(
             physics: ClampingScrollPhysics(),
@@ -193,7 +200,7 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
                         child: TextButton(
                           child: Text(
                             'SUBMIT',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                                 color: Colors.white,
                                 fontSize: 30
                             ),

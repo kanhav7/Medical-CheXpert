@@ -34,7 +34,7 @@ class ColumnButton extends StatelessWidget {
         ),
         Text(
           bottomText,
-          style: GoogleFonts.poppins(
+          style: GoogleFonts.lato(
               fontSize: 15,
               color: Colors.grey.shade500
           ),

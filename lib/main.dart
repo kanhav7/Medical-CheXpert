@@ -25,7 +25,7 @@ class MedicalChexpert extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'landing',
+      initialRoute: 'welcome',
       routes: {
         'welcome': (context) => WelcomePage(),
         'navigator': (context) => NavigationPage(),

@@ -191,11 +191,11 @@ class _LandingPageState extends State<LandingPage> {
                       children: [
                         ColumnButton(
                           buttonIcon: FontAwesomeIcons.male,
-                          bottomText: 'Symptoms',
+                          bottomText: 'MediFinder',
                         ),
                         ColumnButton(
                           buttonIcon: FontAwesomeIcons.stethoscope,
-                          bottomText: 'Doctors',
+                          bottomText: 'MyMedi',
                         ),
                         ColumnButton(
                           buttonIcon: FontAwesomeIcons.pills,
@@ -203,7 +203,7 @@ class _LandingPageState extends State<LandingPage> {
                         ),
                         ColumnButton(
                           buttonIcon: FontAwesomeIcons.fileContract,
-                          bottomText: 'Reports',
+                          bottomText: 'MediTrack',
                         ),
                       ],
                     )

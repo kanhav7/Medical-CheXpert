@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ContainerTextField extends StatelessWidget {
   ContainerTextField({required this.labelText});
@@ -18,6 +19,7 @@ class ContainerTextField extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
             labelText: labelText,
+          labelStyle: GoogleFonts.poppins()
         ),
         validator: (value) {validatorFunc;},
       ),

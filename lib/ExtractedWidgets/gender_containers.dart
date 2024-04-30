@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../constants.dart';
@@ -40,7 +41,7 @@ class _GenderContainerState extends State<GenderContainer> {
             ),
             Text(
               widget.buttonText,
-              style: TextStyle(
+              style: GoogleFonts.poppins(
                   color: widget.genderContentColour,
                   fontSize: 15,
                   fontWeight: FontWeight.bold
