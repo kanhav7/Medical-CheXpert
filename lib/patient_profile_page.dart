@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:medical_chexpert/apointments.dart';
+import 'package:medical_chexpert/patient_apointments.dart';
 import 'package:medical_chexpert/constants.dart';
-import 'package:medical_chexpert/profile_page.dart';
+import 'package:medical_chexpert/patient_profile_page.dart';
 import 'ExtractedWidgets/column_button.dart';
 
 class ProfilePage extends StatefulWidget {

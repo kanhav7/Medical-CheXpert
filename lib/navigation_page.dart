@@ -17,6 +17,7 @@ class NavigationPage extends StatelessWidget {
           //mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
+              flex: 1,
               child: Stack(
                 children: [
                   ClipPath(
@@ -51,74 +52,77 @@ class NavigationPage extends StatelessWidget {
                 ),
               ),
             ),
-            IntrinsicHeight(
-              child: Container(
-                width: double.infinity,
-                margin: EdgeInsets.fromLTRB(30, 15, 30, 15),
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => PatientRegistrationPage()));
-                  },
-                  child: Text(
-                    'PATIENT',
-                    style: GoogleFonts.poppins(
-                        color: Colors.white,
-                      fontWeight: FontWeight.bold
-                    ),
-                  ),
-                  style: ButtonStyle(
-                    elevation: MaterialStatePropertyAll(2),
-                    backgroundColor: MaterialStatePropertyAll(kLogoDarkBlue),
-                    shape: MaterialStatePropertyAll(
-                        RoundedRectangleBorder(
-                            borderRadius: BorderRadius.all(
-                                Radius.circular(15)
+            Expanded(
+              flex: 2,
+              child: Column(
+                children: [
+                  Container(
+                    width: double.infinity,
+                    margin: EdgeInsets.fromLTRB(30, 15, 30, 0),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => PatientRegistrationPage()));
+                      },
+                      child: Text(
+                        'PATIENT',
+                        style: GoogleFonts.poppins(
+                            color: Colors.white,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        elevation: MaterialStatePropertyAll(2),
+                        backgroundColor: MaterialStatePropertyAll(kLogoDarkBlue),
+                        shape: MaterialStatePropertyAll(
+                            RoundedRectangleBorder(
+                                borderRadius: BorderRadius.all(
+                                    Radius.circular(15)
+                                )
                             )
-                        )
-                    ),
-                      side: MaterialStatePropertyAll(
-                          BorderSide(
-                              color: kLogoLightBlue,
-                              width: 3
+                        ),
+                          side: MaterialStatePropertyAll(
+                              BorderSide(
+                                  color: kLogoLightBlue,
+                                  width: 3
+                              )
                           )
-                      )
-                  ),
-                ),
-              ),
-            ),
-            IntrinsicHeight(
-              child: Container(
-                width: double.infinity,
-                margin: EdgeInsets.fromLTRB(30, 15, 30, 45),
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'docRegister');
-                  },
-                  child: Text(
-                    'DOCTOR',
-                    style: GoogleFonts.poppins(
-                        color: Colors.white,
-                      fontWeight: FontWeight.bold
+                      ),
                     ),
                   ),
-                  style: ButtonStyle(
-                    elevation: MaterialStatePropertyAll(2),
-                    backgroundColor: MaterialStatePropertyAll(kLogoDarkBlue),
-                    shape: MaterialStatePropertyAll(
-                        RoundedRectangleBorder(
-                            borderRadius: BorderRadius.all(
-                                Radius.circular(15)
-                            )
-                        )
+                  Container(
+                    width: double.infinity,
+                    margin: EdgeInsets.fromLTRB(30, 15, 30, 45),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, 'docRegister');
+                      },
+                      child: Text(
+                        'DOCTOR',
+                        style: GoogleFonts.poppins(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                      style: ButtonStyle(
+                          elevation: MaterialStatePropertyAll(2),
+                          backgroundColor: MaterialStatePropertyAll(kLogoDarkBlue),
+                          shape: MaterialStatePropertyAll(
+                              RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.all(
+                                      Radius.circular(15)
+                                  )
+                              )
+                          ),
+                          side: MaterialStatePropertyAll(
+                              BorderSide(
+                                  color: kLogoLightBlue,
+                                  width: 3
+                              )
+                          )
+                      ),
                     ),
-                    side: MaterialStatePropertyAll(
-                      BorderSide(
-                        color: kLogoLightBlue,
-                        width: 3
-                      )
-                    )
                   ),
-                ),
+                ],
               ),
             ),
           ],

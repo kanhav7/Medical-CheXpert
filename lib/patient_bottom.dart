@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'landing_page.dart';
-import 'apointments.dart';
-import 'profile_page.dart';
+import 'patient_landing_page.dart';
+import 'patient_apointments.dart';
+import 'patient_profile_page.dart';
 import 'constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -16,7 +16,7 @@ class BottomNavigator extends StatefulWidget {
 class _BottomNavigatorState extends State<BottomNavigator> {
   int selectedIndex = 0;
   List<Widget> _screens = [
-    LandingPage(),
+    PatientLandingPage(),
     ApointmentsPage(),
     ProfilePage()
   ];
@@ -37,7 +37,7 @@ class _BottomNavigatorState extends State<BottomNavigator> {
           print(_screens[selectedIndex]);
         },
         unselectedLabelStyle: GoogleFonts.poppins(),
-        selectedLabelStyle: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+        selectedLabelStyle: GoogleFonts.poppins(),
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.house_rounded),

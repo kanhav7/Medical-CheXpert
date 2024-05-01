@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:medical_chexpert/doctor_registration_page.dart';
 import 'login_page.dart';
 import 'ExtractedWidgets/register_text_field.dart';
 import 'package:dob_input_field/dob_input_field.dart';
@@ -13,7 +16,20 @@ enum Gender{
   other
 }
 
+enum Page{
+  doctor,
+  patient
+}
+
+List displayPage = [
+  PatientRegistrationPage(),
+  DoctorRegistrationPage()
+];
+
+
+
 var selectedGender;
+var selectedPage;
 class PatientRegistrationPage extends StatefulWidget {
   const PatientRegistrationPage({super.key});
   @override
@@ -22,41 +38,33 @@ class PatientRegistrationPage extends StatefulWidget {
 
 class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
 
+  final List<bool> _selectedRegister = <bool>[false, true];
+
   String dropdownValue = kDropDownItems.first;
   @override
   Widget build(BuildContext context) {
 
+    Size size = MediaQuery.of(context).size;
+
+    double screenWidth = size.width;
+    double screenHeight = size.height;
     print(selectedGender);
+
+
+
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFFE9EAf6),
-          appBar: AppBar(
-            title: Text(
-              'Patient Registration',
-              style: GoogleFonts.poppins(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold
-              ),
-            ),
-            backgroundColor: kLogoDarkBlue,
-          ),
           body: SingleChildScrollView(
             physics: ClampingScrollPhysics(),
             child: ConstrainedBox(
               constraints: BoxConstraints.expand(
-                height: 1130
+                height: 970
               ),
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.stretch,
                 // mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Expanded(
-                    flex: 2,
-                    child: Image(
-                        image: AssetImage('images/MC_Logo.png'),
-
-                    ),
-                  ),
                   Expanded(
                     flex: 5,
                     child: Form(
@@ -216,7 +224,7 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
                 ],
               ),
             ),
-          )
+          ),
       ),
     );
   }

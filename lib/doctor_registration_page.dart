@@ -30,32 +30,16 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
     return SafeArea(
       child: Scaffold(
           backgroundColor: Color(0xFFE9EAf6),
-          appBar: AppBar(
-            title: Text(
-              'Doctor Registration',
-              style: GoogleFonts.poppins(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold
-              ),
-            ),
-            backgroundColor: kLogoDarkBlue,
-          ),
           body: SingleChildScrollView(
             physics: ClampingScrollPhysics(),
             child: ConstrainedBox(
               constraints: BoxConstraints.expand(
-                  height: 1450
+                  height: 1350
               ),
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.stretch,
                 // mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Expanded(
-                    flex: 2,
-                    child: Image(
-                        image: AssetImage('images/MC_Logo.png'),
-                    ),
-                  ),
                   Expanded(
                     flex: 6,
                     child: Form(

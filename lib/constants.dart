@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const kActiveContainerColour = Color(0xFF0249B7);
 const kActiveIconColour = Colors.white;
@@ -16,6 +18,22 @@ const kLogoRed = Color(0xFFEE1405);
 const List<String> kDropDownItems = <String>[
   'Doctor',
   'Patient',
+];
+
+List<Widget> pageSelect = <Widget>[
+  Text(
+      'Doctor',
+    style: GoogleFonts.poppins(
+      fontSize: 18
+    ),
+  ),
+  Text(
+      'Patient',
+    style: GoogleFonts.poppins(
+      fontSize: 18
+    ),
+
+  ),
 ];
 
 const kBoxShadow = BoxShadow(
