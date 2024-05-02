@@ -12,7 +12,7 @@ import 'package:medical_chexpert/report/report_year.dart';
 import 'package:medical_chexpert/welcome_page.dart';
 import 'package:medical_chexpert/wrapper_page.dart';
 import 'scroll_registration_page.dart';
-import 'navigation_page.dart';
+import 'splash_screen.dart';
 
 
 void main() {
@@ -26,10 +26,10 @@ class MedicalChexpert extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'wrapper',
+      initialRoute: 'splash',
       routes: {
         'welcome': (context) => WelcomePage(),
-        'navigator': (context) => NavigationPage(),
+        'splash': (context) => SplashScreen(),
         'login': (context) => LoginPage(),
         'docRegister': (context) => DoctorRegistrationPage(),
         'patRegister': (context) => PatientRegistrationPage(),

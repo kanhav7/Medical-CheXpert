@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:medical_chexpert/navigation_page.dart';
+import 'package:medical_chexpert/splash_screen.dart';
 //import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -68,7 +68,7 @@ class _MyAppState extends State<WelcomePage> {
               margin: EdgeInsets.only(bottom: 50),
               child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => NavigationPage()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SplashScreen()));
                   },
                   child: Text(
                       'SKIP',
